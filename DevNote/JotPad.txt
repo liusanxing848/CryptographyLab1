@@ -1,0 +1,52 @@
+docker build command: (no Capital letter)
+docker build -t <customImageName> . 
+build current image: can replace with the current image id.
+
+
+docker run command:
+docker run -p 8080:8080 <imageName>
+
+docker force remove image:
+docker rmi -f <imageIdorName>
+
+How to from the py version
+sudo yum update -y
+sudo yum install docker
+
+if run docker-compose encounter:[28324] Error loading Python lib '/tmp/_MEIOyqKiO/libpython3.7m.so.1.0': dlopen: libcrypt.so.1: cannot open shared object file: No such file or directory
+then run:  sudo yum install libxcrypt-compat
+after install, then try run docker-compose
+
+pip install Flask
+
+pip3 freeze    (to see which flask version going to be used, in this case, we are using 3.0.0)
+
+Docker file config documentation: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-container-image.html
+
+clone the repo from github to the EC2 machine
+
+sudo docker images
+error: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+[sudo systemctl start docker] <=use this to fix the error above
+
+if no images running, then run:
+	sudo docker-compose build.  (fix error as needed)
+then run: 
+	sudo docker images   (will see the images is up)
+
+then run:
+	sodu docker-compose up
+
+triage issue:
+public ip can not be accessed.  => check EC2 security group see the port been opened.
+
+How to launch the instance:
+find the instance
+Instance action: start the instance 
+Wait for the instance state turns to "ready"
+Connect to the EC2 (command line)
+command: pwd    for check the path. 
+navigate to /home/ec2-user/teamA/Lab1
+Command:   sudo docker-compose up
+Now should be running :)
+use the public ip and explore!
