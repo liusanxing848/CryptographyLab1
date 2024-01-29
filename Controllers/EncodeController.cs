@@ -8,6 +8,7 @@ namespace Lab1sharp.Controllers
     [Route("[controller]")]
     public class EncodeController : ControllerBase
     {
+        Logger logger = new Logger();
         [HttpGet]
         public IActionResult Encode([FromQuery] string text)
         {
@@ -18,6 +19,7 @@ namespace Lab1sharp.Controllers
                 Author = "Team A",
                 EncodedCiphertext = encodedText
             };
+            logger.Log(text, "encode");
             return new JsonResult(responseObject);
         }
     }

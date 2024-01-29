@@ -9,6 +9,7 @@ namespace Lab1sharp.Controllers
     [Route("[controller]")]
     public class DecodeController : ControllerBase
     {
+        Logger logger = new Logger();
         public IActionResult Decode([FromQuery] string text)
         {
             string decodedText = Util.Decode(text);
@@ -18,6 +19,7 @@ namespace Lab1sharp.Controllers
                 Author = "Team A",
                 DecodedCiphertext = decodedText
             };
+            logger.Log(text, "decode");
             return new JsonResult(responseObject);
         }
     }
