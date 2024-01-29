@@ -15,5 +15,14 @@ namespace Lab1sharp.Controllers
             string logContent = System.IO.File.ReadAllText("Logs.txt");
             return Ok(logContent);
         }
+
+        [HttpGet]
+        [Route("/ClearLog")]
+        public IActionResult ClearLog()
+        {
+            System.IO.File.WriteAllText("Logs.txt", string.Empty);
+
+            return Ok("Log cleared!");
+        }
     }
 }
