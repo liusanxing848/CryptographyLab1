@@ -31,3 +31,5 @@ D:\SMU\sandbox\Lab1sharp\obj\Debug\net8.0\Lab1sharp.pdb
 D:\SMU\sandbox\Lab1sharp\obj\Debug\net8.0\Lab1sharp.genruntimeconfig.cache
 D:\SMU\sandbox\Lab1sharp\obj\Debug\net8.0\ref\Lab1sharp.dll
 D:\SMU\sandbox\Lab1sharp\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\SMU\sandbox\Lab1sharp\obj\Debug\net8.0\Lab1sharp.sourcelink.json
+D:\SMU\sandbox\Lab1sharp\bin\Debug\net8.0\Codebook.JSON

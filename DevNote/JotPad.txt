@@ -5,6 +5,8 @@ build current image: can replace with the current image id.
 
 docker run command:
 docker run -p 8080:8080 <imageName>
+in AWS linux:
+sudo docker run -p 8080:8080 <imageName>
 
 docker force remove image:
 docker rmi -f <imageIdorName>
@@ -50,3 +52,6 @@ navigate to /home/ec2-user/teamA/Lab1
 Command:   sudo docker-compose up
 Now should be running :)
 use the public ip and explore!
+
+for install 8.0 on the aws:
+https://learn.microsoft.com/en-us/dotnet/core/install/linux-rhel

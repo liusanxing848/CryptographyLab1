@@ -1,0 +1,394 @@
+{
+    "names" :
+    {
+        "sanxing" : "is",
+        "xiaojing" : "had",
+        "richard" : "do",
+        "beth" : "has",
+        "ethan" : "could",
+        "keith" : "did",
+        "bob" : "take"
+    },
+
+    "places" :
+    {
+        "nashville" : "say",
+        "houston" : "want",
+        "miami" : "must",
+        "dallas" : "move",
+        "buffalo" : "found",
+        "seattle" : "keep",
+        "tuscon" : "might",
+        "detroit" : "got",
+        "chicago" : "took",
+        "austin" : "eat",
+        "memphis" : "being",
+        "minneapolis" : "was",
+        "lacey" : "were"
+    },
+
+    "sets" : 
+    {
+        "aliceblue" : "will",
+        "amaranth" : "look",
+        "amber" : "been",
+        "amethyst" : "get",
+        "applegreen" : "know",
+        "applered" : "help",
+        "apricot" : "show",
+        "aquamarine" : "ask",
+        "azure" : "try",
+        "babyblue" : "study",
+        "beige" : "start",
+        "brickred" : "close",
+        "black" : "run",
+        "blue" : "carry",
+        "bluegreen" : "watch",
+        "blueviolet" : "leave",
+        "blush" : "are",
+        "bronze" : "can",
+        "brown" : "would",
+        "burgundy" : "write",
+        "byzatium" : "call",
+        "carmine" : "come",
+        "cerise" : "live",
+        "cerulean" : "tell",
+        "champagne" : "set",
+        "chartreusegreen" : "went",
+        "chocolate" : "change",
+        "cobaltblue" : "learn",
+        "coffee" : "thought",
+        "copper" : "seem",
+        "coral" : "walk",
+        "crimson" : "hear",
+        "cyan" : "let",
+        "desertsand" : "be",
+        "electricblue" : "said",
+        "emerald" : "make",
+        "erin" : "go",
+        "gold" : "am",
+        "gray" : "made",
+        "green" : "give",
+        "harlequin" : "follow",
+        "indigo" : "put",
+        "ivory " : "read",
+        "jade" : "play",
+        "junglegreen" : "should",
+        "lavender" : "saw",
+        "lemon" : "open",
+        "lilac" : "began",
+        "lime" : "stop",
+        "magenta" : "cut",
+        "magentarose" : "have",
+        "maroon" : "use",
+        "mauve" : "like",
+        "navyblue" : "see",
+        "ochre" : "find",
+        "olive" : "may",
+        "orange" : "think",
+        "orangered" : "came",
+        "orchid" : "does",
+        "peach" : "need",
+        "pear" : "spell",
+        "periwinkle" : "add",
+        "persianblue" : "turn",
+        "pink" : "begin",
+        "plum" : "grow",
+        "prussianblue" : "miss",
+        "puce" : "talk",
+        "purple" : "word",
+        "raspberry" : "water",
+        "red" : "place",
+        "redviolet" : "sentence",
+        "rose" : "end",
+        "ruby" : "picture",
+        "rust" : "letter",
+        "salmon" : "world",
+        "sangria" : "father",
+        "sapphire" : "head",
+        "scarlet" : "group",
+        "silver" : "mile",
+        "slategray" : "book",
+        "springbud" : "mountain",
+        "springgreen" : "time",
+        "tan" : "day",
+        "taupe" : "year",
+        "teal" : "man",
+        "turquoise" : "men",
+        "ultramarine" : "air",
+        "violet" : "point",
+        "viridian" : "food",
+        "white" : "tree",
+        "yellow" : "story"
+    },
+    "chart" : 
+    [
+        {
+            "ascii" : "33",
+            "value" : "nightingale"
+        },
+        {
+            "ascii" : "34",
+            "value" : "rook"
+        },
+        {
+            "ascii" : "35",
+            "value" : "raven"
+        },
+        {
+            "ascii" : "36",
+            "value" : "falcon"
+        },
+        {
+            "ascii" : "37",
+            "value" : "owl"
+        },
+        {
+            "ascii" : "38",
+            "value" : "hawk"
+        },
+        {
+            "ascii" : "39",
+            "value" : "sparrow"
+        },
+        {
+            "ascii" : "40",
+            "value" : "eagle"
+        },
+        {
+            "ascii" : "41",
+            "value" : "dove"
+        },
+        {
+            "ascii" : "42",
+            "value" : "robin"
+        },
+        {
+            "ascii" : "43",
+            "value" : "pelican"
+        },
+        {
+            "ascii" : "44",
+            "value" : "shadow"
+        },
+        {
+            "ascii" : "45",
+            "value" : "whisper"
+        },
+        {
+            "ascii" : "46",
+            "value" : "ghost"
+        },
+        {
+            "ascii" : "47",
+            "value" : "phatom"
+        },
+        {
+            "ascii" : "48",
+            "value" : "mirage"
+        },
+        {
+            "ascii" : "49",
+            "value" : "specter"
+        },
+        {
+            "ascii" : "50",
+            "value" : "blackout"
+        },
+        {
+            "ascii" : "51",
+            "value" : "canary"
+        },
+        {
+            "ascii" : "52",
+            "value" : "deepsix"
+        },
+        {
+            "ascii" : "53",
+            "value" : "echo"
+        },
+        {
+            "ascii" : "54",
+            "value" : "foxtrot"
+        },
+        {
+            "ascii" : "55",
+            "value" : "gottime"
+        },
+        {
+            "ascii" : "56",
+            "value" : "hydra"
+        },
+        {
+            "ascii" : "57",
+            "value" : "jackpot"
+        },
+        {
+            "ascii" : "58",
+            "value" : "kilo"
+        },
+        {
+            "ascii" : "59",
+            "value" : "lima"
+        },
+        {
+            "ascii" : "60",
+            "value" : "november"
+        },
+        {
+            "ascii" : "61",
+            "value" : "oscar"
+        },
+        {
+            "ascii" : "62",
+            "value" : "papa"
+        },
+        {
+            "ascii" : "63",
+            "value" : "quebec"
+        },
+        {
+            "ascii" : "64",
+            "value" : "romeo"
+        },
+        {
+            "ascii" : "91",
+            "value" : "sierra"
+        },
+        {
+            "ascii" : "92",
+            "value" : "tango"
+        },
+        {
+            "ascii" : "93",
+            "value" : "uniform"
+        },
+        {
+            "ascii" : "94",
+            "value" : "victor"
+        },
+        {
+            "ascii" : "95",
+            "value" : "whiskey"
+        },
+        {
+            "ascii" : "96",
+            "value" : "xray"
+        },
+        {
+            "ascii" : "97",
+            "value" : "yankee"
+        },
+        {
+            "ascii" : "98",
+            "value" : "zulu"
+        },
+        {
+            "ascii" : "99",
+            "value" : "mirror"
+        },
+        {
+            "ascii" : "100",
+            "value" : "king"
+        },
+        {
+            "ascii" : "101",
+            "value" : "queen"
+        },
+        {
+            "ascii" : "102",
+            "value" : "pawn"
+        },
+        {
+            "ascii" : "103",
+            "value" : "knight"
+        },
+        {
+            "ascii" : "104",
+            "value" : "check"
+        },
+        {
+            "ascii" : "105",
+            "value" : "checkmate"
+        },
+        {
+            "ascii" : "106",
+            "value" : "gambit"
+        },
+        {
+            "ascii" : "107",
+            "value" : "castle"
+        },
+        {
+            "ascii" : "109",
+            "value" : "pin"
+        },
+        {
+            "ascii" : "110",
+            "value" : "sacrifice"
+        },
+        {
+            "ascii" : "111",
+            "value" : "promotion"
+        },
+        {
+            "ascii" : "112",
+            "value" : "zugzwang"
+        },
+        {
+            "ascii" : "113",
+            "value" : "blindfold"
+        },
+        {
+            "ascii" : "115",
+            "value" : "stalemate"
+        },
+        {
+            "ascii" : "116",
+            "value" : "draw"
+        },
+        {
+            "ascii" : "117",
+            "value" : "resignation"
+        },
+        {
+            "ascii" : "118",
+            "value" : "endgame"
+        },
+        {
+            "ascii" : "119",
+            "value" : "opening"
+        },
+        {
+            "ascii" : "120",
+            "value" : "middlegame"
+        },
+        {
+            "ascii" : "121",
+            "value" : "tactics"
+        },
+        {
+            "ascii" : "122",
+            "value" : "strategy"
+        },
+        {
+            "ascii" : "123",
+            "value" : "bluff"
+        },
+        {
+            "ascii" : "124",
+            "value" : "landingzone"
+        },
+        {
+            "ascii" : "125",
+            "value" : "tempo"
+        },
+        {
+            "ascii" : "126",
+            "value" : "position"
+        }
+        
+    ]
+
+    
+}

@@ -1,4 +1,6 @@
+using Lab1sharp.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Runtime.InteropServices.Marshalling;
 using System.Text;
 
 namespace Lab1sharp.Controllers
@@ -9,11 +11,12 @@ namespace Lab1sharp.Controllers
     {
         public IActionResult Decode([FromQuery] string text)
         {
+            string decodedText = Util.Decode(text);
             var responseObject = new 
             {
                 Operation = "Decoder",
                 Author = "Team A",
-                DecodedCiphertext = "The decoded result from your text: " + text
+                DecodedCiphertext = decodedText
             };
             return new JsonResult(responseObject);
         }

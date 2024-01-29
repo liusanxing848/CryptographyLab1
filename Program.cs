@@ -1,3 +1,5 @@
+using Lab1sharp.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -21,6 +23,10 @@ if (app.Environment.IsDevelopment())
 app.UseAuthorization();
 
 app.MapControllers();
+Util.InitializeOnStartUp();
 
-
+//Util.test();
 app.Run();
+
+
+
