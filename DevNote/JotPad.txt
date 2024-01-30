@@ -7,6 +7,7 @@ docker run command:
 docker run -p 8080:8080 <imageName>
 in AWS linux:
 sudo docker run -p 8080:8080 <imageName>
+sudo docker run --network host <imageName>   =>open all port
 
 docker force remove image:
 docker rmi -f <imageIdorName>

@@ -72,7 +72,8 @@ namespace Lab1sharp.Services
                 } while (IsAdjacentToA(words, randomPosition));
 
                 // Insert ' a ' at the random position
-                 words.Insert(randomPosition, "a");
+                //words.Insert(randomPosition, "a");
+                words.Insert(randomPosition, RandomNeg3Digits());
             }
 
             // Join the words back into a sentence
@@ -82,7 +83,8 @@ namespace Lab1sharp.Services
         public static string Decode(string input) 
         {
             System.Console.WriteLine(input);
-            List<string> data = SplitIntoWordsExcludingA(input);
+            //List<string> data = SplitIntoWordsExcludingA(input);
+            List<string> data = SplitIntoWordsExcludingNegValue(input);
             System.Console.WriteLine("data Count: " + data.Count);
             List<string> decodedContainer = new List<string>();
             string tempWord = "";
@@ -120,11 +122,11 @@ namespace Lab1sharp.Services
                     if (int.TryParse(s, out int number2) && number2 <= 1000)
                     {
                         System.Console.WriteLine("found homophonic word");
-                        if(number2 % 2 == 0)
+                        if(number2 % 2 == 0 && number2 > 0) //greater than zero make sure not the null symbol
                         {
                             tempWord += 'l';
                         }
-                        if(number2 % 2 != 0)
+                        if(number2 % 2 != 0 && number2 > 0)
                         {
                             tempWord += 'r';
                         }
@@ -214,6 +216,49 @@ namespace Lab1sharp.Services
 
             return result;
         }
+
+        static List<string> SplitIntoWordsExcludingNegValue(string input)
+        {
+            List<string> result = new List<string>();
+        string currentWord = "";
+        bool isNegativeNumber = false;
+
+        foreach (char ch in input)
+        {
+            if (ch != ' ')
+            {
+                // Check if the character is the start of a negative number
+                if (ch == '-' && currentWord == "")
+                {
+                    isNegativeNumber = true;
+                }
+                else if (!char.IsDigit(ch) && isNegativeNumber)
+                {
+                    // If a non-digit character is encountered, it's not a negative number
+                    isNegativeNumber = false;
+                }
+
+                currentWord += ch;
+            }
+            else
+            {
+                if (currentWord != "" && !isNegativeNumber)
+                {
+                    result.Add(currentWord);
+                }
+                currentWord = "";
+                isNegativeNumber = false;
+            }
+        }
+
+        // Add the last word if it's not empty and not a negative number
+        if (currentWord != "" && !isNegativeNumber)
+        {
+            result.Add(currentWord);
+        }
+
+        return result;
+        }
         private static void ReadJson()
         {
             string jsonString = File.ReadAllText("Codebook.JSON");
@@ -295,6 +340,13 @@ namespace Lab1sharp.Services
             int randomNumber = random.Next(10001, 99999);
             return randomNumber.ToString();
 
+        }
+        private static string RandomNeg3Digits()
+        {
+            Random random = new Random();
+            int randomNumber = random.Next(-499, -1);
+            int randOdd = randomNumber * 2;
+            return randOdd.ToString(); 
         }
     }
 }
