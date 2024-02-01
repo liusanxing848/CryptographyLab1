@@ -65,4 +65,4 @@ The program can only encode character appears on the EN-Keyboard excluding Capit
 
 ## ARCHITECTURE & CODE
 This project operates within a .NetCore (8.0) framework and is executed in a Docker environment hosted on an AWS EC2 instance. Code updates are managed by pulling new versions from a GitHub repository, facilitating version upgrades.\
-GitHub Link:
+GitHub Link: https://github.com/liusanxing848/CryptographyLab1
