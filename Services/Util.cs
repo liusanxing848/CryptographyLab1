@@ -43,9 +43,13 @@ namespace Lab1sharp.Services
                         }
                         if(c.ToString() != " " && c.ToString() != "r" && c.ToString() != "l")
                         {
+                            if((int)c <32 || ((int)c >= 65 && (int)c <=90) || (int)c >= 127)
+                            {
+                                return "error, character outside the ASCII range, input should be regular letters on the keyboard!";
+                            }
                             string key = ((int)c).ToString();
                             encodeContainer.Add(codeBook_ascii_encode[key]);
-                        }                    
+                        }           
                     }
                 }
             }
