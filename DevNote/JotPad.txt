@@ -8,7 +8,8 @@ docker run -p 8080:8080 <imageName>
 in AWS linux:
 sudo docker run -p 8080:8080 <imageName>
 sudo docker run --network host <imageName>   =>open all port
-docker run -d -p host_port:container_port image_name
+docker run --name {new container name -p {inner port}:{outer port} -d {image name}
+
 
 
 docker force remove image:
